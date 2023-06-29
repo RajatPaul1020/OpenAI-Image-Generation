@@ -26,7 +26,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://openai-image-generator-fby9.onrender.com', {
+      const response = await fetch('http://localhost:9000/api/v1/post', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
